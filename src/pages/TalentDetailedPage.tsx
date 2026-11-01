@@ -7,7 +7,7 @@ import Technologies from "../components/Technologies";
 import Experience from "../components/Experience";
 import Portfolio from "../components/Portfolio";
 
-function ProfessionalDetailedPage() {
+function TalentDetailedPage() {
   return (
     <main className="p-4 flex-1">
       <ButtonLink
@@ -28,4 +28,4 @@ function ProfessionalDetailedPage() {
     </main>
   );
 }
-export default ProfessionalDetailedPage;
+export default TalentDetailedPage;

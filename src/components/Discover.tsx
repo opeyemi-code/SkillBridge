@@ -1,6 +1,6 @@
 // Discovery.tsx
 import { Check } from "lucide-react";
-import ProfessionalCard from "./ProfessionalCard";
+import TalentCard from "./TalentCard";
 import professionals from "../data/professionals.json";
 import { PROFESSIONALS_PER_PAGE } from "./Pagination";
 
@@ -40,7 +40,7 @@ function Discover({ currentPage }: DiscoverProps) {
         {currentProfessionals.map((professional) => (
           <li key={professional.id}>
             <article className="group transition-all duration-200 shadow-sm">
-              <ProfessionalCard
+              <TalentCard
                 name={professional.name}
                 category={professional.category}
                 hourlyRate={professional.hourlyRate}

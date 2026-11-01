@@ -11,7 +11,7 @@ import {
 } from "./Card";
 import { ButtonLink, Button } from "./Button";
 
-type ProfessionalCardProp = {
+type TalentCardProp = {
   name: string;
   category: string;
   hourlyRate: number;
@@ -21,14 +21,14 @@ type ProfessionalCardProp = {
   href?: string;
 };
 
-function ProfessionalCard({
+function TalentCard({
   name,
   category,
   hourlyRate,
   summary,
   skills,
   availability,
-}: ProfessionalCardProp) {
+}: TalentCardProp) {
   return (
     <Card className="rounded-xl border-0 p-5">
       <CardHeader className="flex-row justify-between items-center p-0">
@@ -97,7 +97,7 @@ function ProfessionalCard({
         <ButtonLink
           variant="link"
           className="flex items-center gap-1 text-primary text-sm hover:no-underline lg:text-base group-hover:translate-x-0.5 transition-all"
-          href="/professionalDetailedPage"
+          href="/TalentDetailedPage"
         >
           View profile <ArrowRight size={18} />
         </ButtonLink>
@@ -105,4 +105,4 @@ function ProfessionalCard({
     </Card>
   );
 }
-export default ProfessionalCard;
+export default TalentCard;

@@ -17,16 +17,6 @@ function Pagination({ currentPage, onPageChange }: PaginationProps) {
 
   const activePage = Math.min(currentPage, totalPages || 1);
 
-  const firstItem =
-    totalProfessionals === 0
-      ? 0
-      : (activePage - 1) * PROFESSIONALS_PER_PAGE + 1;
-
-  const lastItem = Math.min(
-    activePage * PROFESSIONALS_PER_PAGE,
-    totalProfessionals,
-  );
-
   const goToPage = (page: number) => {
     const nextPage = Math.max(1, Math.min(page, totalPages || 1));
 

@@ -18,7 +18,7 @@ type ProfessionalCardProp = {
   summary: string;
   skills: string[];
   availability: string;
-  href: string;
+  href?: string;
 };
 
 function ProfessionalCard({
@@ -28,7 +28,6 @@ function ProfessionalCard({
   summary,
   skills,
   availability,
-  href,
 }: ProfessionalCardProp) {
   return (
     <Card className="rounded-xl border-0 p-5">
@@ -97,8 +96,8 @@ function ProfessionalCard({
         </Badge>
         <ButtonLink
           variant="link"
-          className="flex items-center gap-1 text-primary text-sm hover:no-underline lg:text-base"
-          href={href}
+          className="flex items-center gap-1 text-primary text-sm hover:no-underline lg:text-base group-hover:translate-x-0.5 transition-all"
+          href="/professionalDetailedPage"
         >
           View profile <ArrowRight size={18} />
         </ButtonLink>

@@ -3,6 +3,7 @@ import DiscoverPage from "../pages/DiscoverPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 import SavedProfilesPage from "../pages/SavedProfilesPage";
+import ProfessionalDetailedPage from "../pages/ProfessionalDetailedPage";
 
 function AppContent() {
   return (
@@ -12,6 +13,10 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<DiscoverPage />} />
           <Route path="/saved" element={<SavedProfilesPage />} />
+          <Route
+            path="/professionalDetailedPage"
+            element={<ProfessionalDetailedPage />}
+          />
         </Routes>
         <Footer />
       </div>

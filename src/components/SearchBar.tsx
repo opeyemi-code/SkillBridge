@@ -1,4 +1,5 @@
 import { SearchIcon } from "lucide-react";
+import { Button } from "./Button";
 
 function Search() {
   return (
@@ -18,49 +19,55 @@ function Search() {
       {/* Button group */}
       <div className="flex flex-col md:flex-row md:justify-between gap-2">
         <div className="flex gap-2 flex-wrap">
-          <button
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-primary px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             All
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             Development
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             Design
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             Writing
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             Marketing
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
             className="text-xs bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
             type="button"
           >
             Video
-          </button>
+          </Button>
         </div>
         {/* Dropdown list */}
         <label
           className="text-xs self-start bg-main-background text-secondary-text px-3 py-1.5 font-medium rounded-lg"
           htmlFor="rate"
         >
-          <select name="rate" id="rate">
+          <select className="hover:cursor-pointer" name="rate" id="rate">
             <option value="Highest Relevance">Highest Relevance</option>
             <option value="Hourly Rate: Low to High">
               Hourly Rate: Low to High

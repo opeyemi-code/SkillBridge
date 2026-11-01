@@ -39,15 +39,16 @@ function Discover({ currentPage }: DiscoverProps) {
       <ul className="my-4 flex flex-col gap-5">
         {currentProfessionals.map((professional) => (
           <li key={professional.id}>
-            <ProfessionalCard
-              name={professional.name}
-              category={professional.category}
-              hourlyRate={professional.hourlyRate}
-              summary={professional.bio}
-              skills={professional.skills}
-              availability={professional.availability}
-              href={professional.href}
-            />
+            <article className="group transition-all duration-200 shadow-sm">
+              <ProfessionalCard
+                name={professional.name}
+                category={professional.category}
+                hourlyRate={professional.hourlyRate}
+                summary={professional.bio}
+                skills={professional.skills}
+                availability={professional.availability}
+              />
+            </article>
           </li>
         ))}
       </ul>

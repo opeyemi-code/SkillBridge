@@ -1,8 +1,7 @@
 import { ArrowRight, BadgeCheck, Bookmark } from "lucide-react";
 import avatar from "../assets/images/avatar.jpg";
 import { Badge } from "./Badge";
-import {
-  Card,
+import Card, {
   CardHeader,
   CardTitle,
   CardDescription,

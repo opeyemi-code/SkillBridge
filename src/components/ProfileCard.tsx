@@ -1,6 +1,6 @@
 import { MapPin, Bookmark, Check } from "lucide-react";
 import { Badge } from "./Badge";
-import { Card, CardHeader, CardTitle, CardBody, CardDescription } from "./Card";
+import Card, { CardHeader, CardTitle, CardBody, CardDescription } from "./Card";
 import { Button } from "./Button";
 
 function ProfileCard() {
